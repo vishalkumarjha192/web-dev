@@ -15,4 +15,4 @@ This is a simple one-page portfolio website built using semantic HTML tags.
 3. Fill and test the contact form (non-functional in this HTML-only version).
 
 ---
-Author: Student Name
+Author: Vishal kumar jha
