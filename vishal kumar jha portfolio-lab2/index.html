@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Vishal's Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h2>Hello, I'm <span>Vishal</span></h2>
+            <p>A passionate learner and 1st Semester B.Tech CSE student exploring the world of web development.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Profile photo of Sumit" class="profile-img">
+                <p>Hi! I'm vishal, a dedicated and enthusiastic 1st Semester B.Tech CSE student. I enjoy learning programming, building simple web projects, and understanding how technology shapes the modern world.</p>
+            </div>
+        </section>
+
+        <section id="education" class="education-section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Technology (B.Tech) in Computer Science and Engineering</strong></p>
+            <p>Currently pursuing 1st Semester (2025)</p>
+            <p>Learning HTML, CSS, Python, and basic programming fundamentals.</p>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <article class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A one-page portfolio website built using HTML and CSS, showcasing my personal details and skills.</p>
+            </article>
+            <article class="project-card">
+                <h3>Calculator App</h3>
+                <p>A simple calculator using HTML, CSS, and JavaScript for performing basic arithmetic operations.</p>
+            </article>
+            <article class="project-card">
+                <h3>Student Record System</h3>
+                <p>A small project that stores and displays student information using Python dictionary concepts.</p>
+            </article>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Technical Skills</h2>
+            <table class="skills-table">
+                <thead>
+                    <tr><th>Skill</th><th>Proficiency</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>HTML</td><td>Intermediate</td></tr>
+                    <tr><td>CSS</td><td>Beginner</td></tr>
+                    <tr><td>Python</td><td>Intermediate</td></tr>
+                    <tr><td>C Programming</td><td>Beginner</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Vishal | Designed for Lab Assignment 2</p>
+    </footer>
+
+    <script>
+        const topButton = document.getElementById('backToTop');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+        topButton.addEventListener('click', () => {
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
