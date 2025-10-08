@@ -1,6 +1,6 @@
 # Lab Assignment 2 - Portfolio Website (Aryan)
 
-This is Aryan's Lab Assignment 2 project for 1st Semester.
+This is vishal's Lab Assignment 2 project for 1st Semester.
 
 ## Sections
 - Hero Section
@@ -17,4 +17,4 @@ This is Aryan's Lab Assignment 2 project for 1st Semester.
 - Back-to-top button
 - Hover effects on projects and buttons
 
-Author: Aryan (B.Tech CSE - 1st Semester)
+Author: Vishal(B.Tech CSE - 1st Semester)
