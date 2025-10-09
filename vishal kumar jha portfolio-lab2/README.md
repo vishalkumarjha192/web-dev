@@ -1,4 +1,4 @@
-# Lab Assignment 2 - Portfolio Website (Aryan)
+# Lab Assignment 2 - Portfolio Website (Vishal Kumar Jha)
 
 This is vishal's Lab Assignment 2 project for 1st Semester.
 
