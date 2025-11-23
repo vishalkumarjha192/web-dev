@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background:white;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        header a:hover { color: #ff4757; }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5%;
+            min-height: 80vh;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero-text h2 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            animation: colorchange 3s infinite alternate;
+        }
+
+        @keyframes colorchange {
+            0% { color: #ff4757; }
+            100% { color: #1e90ff; }
+        }
+
+        .hero img {
+            width: 280px;
+            border-radius: 50%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            padding: 4rem 5%;
+        }
+
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+
+        .card:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            background: #ff4757;
+            color: white;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-bottom: 2rem;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I am Vishal Kumar Jha</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+        <img src="WhatsApp Image 2025-11-23 at 18.41.29_ca1d9c16.jpg" alt="Profile" />
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a passionate developer who loves building websites and interactive UI designs.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="card">Project 1</div>
+            <div class="card">Project 2</div>
+            <div class="card">Project 3</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 VISHAL KUMAR JHA | Portfolio Website
+    </footer>
+</body>
+</html>
