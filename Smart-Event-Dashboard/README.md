@@ -52,7 +52,7 @@ Smart-Event-Dashboard/
 1. Clone the repository:
 
 
-git clone https://github.com/vishalkumarjha192/smart-event-dashboard.git
+git clone [https://github.com/vishalkumarjha192/smart-event-dashboard.git](https://github.com/vishalkumarjha192/web-dev/tree/main/Smart-Event-Dashboard)
 
 2. Open the project folder.
 3. Open `index.html` in your browser.
@@ -100,3 +100,4 @@ GitHub: [https://github.com/vishalkumarjha192](https://github.com/vishalkumarjha
 ## 📄 License
 
 This project is open-source and free to use for educational purposes.
+
