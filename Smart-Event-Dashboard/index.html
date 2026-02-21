@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Application and Hospital Management Application</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>🎯Smart Event Dashboard</h1>
+
+
+  <div class="Event">
+
+
+
+    <!-- Add Event -->
+    <div id="hello">
+      <h2>Add New Event</h2>
+
+      <label class="l" for="title">Event Title:</label><br>
+      <input class="marg" type="text" id="title"><br>
+
+
+      <label class="l" for="date" >Event Date:</label><br>
+      <input class="marg" type="date" id="date"><br>
+
+
+      <label class="l" for="category">Category:</label><br>
+      <select  name="category" id="category"><br>
+        <option>Conference</option>
+        <option>Workshop</option>
+        <option>Meeting</option>
+        <option>Webinar</option>
+      </select><br>
+
+
+      <label class="l" for="text">Description</label><br>
+      <textarea name="discription" id="discription" rows="5" cols="20"></textarea><br>
+
+
+      <button onclick="addEvent()">Add Event </button>
+    </div>
+
+
+
+
+    <!-- My Event -->
+
+    <div class="event-list">
+
+
+      <h2>My Event </h2>
+      <div id="clear-event">
+        <button onclick="clearEvents()" >Clear All event</button>
+        <button onclick="addSampleEvents()">Add Sample Event</button>
+      </div>
+
+
+      <div class="Add-event" id="eventList">
+        <p id="empty">No event yet. Add your first event!</p>
+      </div>
+
+    
+
+    </div>
+
+
+
+
+  </div>
+
+
+<!-- DOM Demo -->
+<div class="dom-demo">
+  <h2>DOM Munipulation Demo</h2>
+  <div id="keyOutput">Press any key...</div>
+</div>
+
+
+
+</body>
+<script src="index.js"></script>
+
+</html>

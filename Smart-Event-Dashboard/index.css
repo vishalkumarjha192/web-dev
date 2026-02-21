@@ -1,0 +1,149 @@
+body {
+  background-color: #44bfd4c7;
+  
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+.Event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  
+
+}
+
+/* Add Event */
+h2 {
+  color: rgb(97, 109, 216) ;
+  margin: 20px;
+  font-weight: bold;
+}
+.l {
+  margin: 20px;
+  font-weight: bold;
+  
+}
+#category{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.marg{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  width:300px;
+  height: 30px;
+  margin-top: 5px;
+  border: 1px solid rgb(165, 154, 154);
+}
+
+#hello {
+  width: 350px;
+  height: 500px;
+  /* border: none; */
+  /* border: 1px solid black; */
+  display: block;
+  background-color: white;
+  border-radius: 3%;
+
+  
+}
+button{
+  width:300px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #44bfd4c7;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  /* cursor: pointer; */
+
+}
+#discription {
+  width:270px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+/* My Event */
+
+.event-list{
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 20px;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+}
+p {
+  margin-block: 0;
+}
+#clear-event {
+  display: flex;
+  /* margin: 20px; */
+  
+}
+
+#c{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: rgb(97, 109, 216);
+  color: white;
+  
+}
+#a{
+  border: 1px solid black;
+  border-radius: 10px;
+   padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: rgb(97, 109, 216);
+  color: white;
+}
+
+#empty{
+  color: rgb(168, 165, 165);
+}
+
+.Add-event{
+  width:300px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 40px;
+}
+
+
+/* DOM Demo */
+.dom-demo{
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  margin: 30px auto;
+  width: 80%;
+}
