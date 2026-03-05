@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>download timer</title>
+  <style>
+
+    *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f172a;
+}
+
+.glass-card{
+  width:300px;
+  padding:30px;
+  text-align:center;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+  border-radius:10px;
+  color:white;
+  box-shadow:0 4px 20px rgba(0,0,0,0.3);
+}
+
+h2{
+  margin-bottom:20px;
+}
+
+.progress-container{
+  width:100%;
+  height:10px;
+  background:#1e293b;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:100%;
+  width:0%;
+  background:#7c4dff;
+  transition:width 0.3s ease;
+}
+
+.percent{
+  margin-top:15px;
+  font-size:18px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <h2>Downloading...</h2>
+
+
+    <div class="progress-container">
+      <div class="progress-bar" id="percentText"></div>
+    </div>
+
+
+    <div class="percent" id="percentText">0%</div>
+  </div>
+
+</body>
+<script src="download_timer.js"></script>
+</html>
