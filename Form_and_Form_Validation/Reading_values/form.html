@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form{
+      width: 200px;
+      height: 300px;
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+      justify-content: space-between;
+    }
+    small {
+      color: red;
+    }
+    #hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <!-- <input patten="[a-z] {0,9}" required minlength="3" maxlength="10" type="text" placeholder="name" id="name"> <br> <br> -->
+
+    <input type="text" placeholder="name" id="name"> <br> <br>
+    <div id="hide">
+      <small>name should be more then 2 character</small> <br> <br>
+    </div>
+    <input type="email" placeholder="email" id="email"> <br> <br>  <br>
+    <input type="password" placeholder="password" id="password"> <br>  <br> 
+    <select id="gender">
+      <option value="male">male</option>
+      <option value="female">female</option>
+      <option value="other">other</option>
+    </select> <br> <br> 
+    <textarea placeholder="Tell us about you" id="textarea"></textarea><br><br>
+    <input type="submit">
+  </form>
+</body>
+
+<script src="form.js"></script>
+
+</html>
