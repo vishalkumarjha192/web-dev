@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,body {
+      width: 100%;
+      height: 100%;
+      background-color: aqua;
+    }
+    body {
+      position: absolute;
+      overflow: hidden;
+    }
+    .main {
+      width: 100%;
+      height: 50px;
+      background-color: #222;
+    }
+
+    .nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center; 
+      justify-content: space-around ;
+      background-color: #444;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    button{
+      padding: 12px 22px ;
+      background-color: red;
+      border-radius: 5px;
+      border: none;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- In Event bubbling addEventLisinor is move from child to parent  -->
+  <div class="main">
+    <div class="nav">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <button>Click me</button>
+    </div>
+  </div>
+</body>
+<script src="Event_bubbling_and_Capturing.js"></script>
+</html>
