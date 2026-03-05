@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Capturing Example</title>
+
+<style>
+  html, body{
+    height:100%;
+    margin:0;
+  }
+
+  .a{
+    height:80%;
+    width:80%;
+    background-color:brown;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .b{
+    height:80%;
+    width:80%;
+    background-color:green;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .c{
+    height:80%;
+    width:80%;
+    background-color:pink;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Event Capturing moves from Parent → Child -->
+
+<div class="a">
+  <div class="b">
+    <div class="c">
+      <button>Click Me</button>
+    </div>
+  </div>
+</div>
+
+<script src="Capturing.js"></script>
+
+</body>
+</html>
