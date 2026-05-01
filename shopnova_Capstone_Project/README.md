@@ -131,3 +131,9 @@ Or connect your GitHub repo to [vercel.com](https://vercel.com) — zero config 
 ## 👥 Team
 
 Capstone Project — CSE (AI & ML), K.R. Mangalam University, 2026
+
+# 👨‍💻 Author
+
+**Vishal Kumar Jha**
+GitHub: https://github.com/vishalkumarjha192
+
