@@ -53,7 +53,7 @@ export default function ProductDetail() {
 
   // Mock additional info for richer UI
   const specs = {
-    "electronics":    { Brand: 'TechPro', Warranty: '1 Year', In Box: 'Unit, Manual, Cable' },
+    "electronics":    { Brand: 'TechPro', Warranty: '1 Year', 'In Box': 'Unit, Manual, Cable' },
     "jewelery":       { Material: 'Sterling Silver / Gold', Style: 'Contemporary', Care: 'Wipe with soft cloth' },
     "men's clothing": { Fabric: 'Premium Cotton', Fit: 'Regular Fit', Care: 'Machine Wash Cold' },
     "women's clothing":{ Fabric: 'Polyester Blend', Fit: 'Slim Fit', Care: 'Hand Wash Preferred' },
