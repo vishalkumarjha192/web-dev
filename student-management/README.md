@@ -60,3 +60,10 @@ Server runs at `http://localhost:8080`
 2. Open Postman and create requests for each endpoint above
 3. Check both success responses and error cases (invalid id, missing fields)
 4. Watch the terminal — the custom logger middleware prints the method, URL, and timestamp of every request
+
+-------------------------------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+**Vishal Kumar Jha**  
+GitHub: [vishalkumarjha192](https://github.com/vishalkumarjha192)
