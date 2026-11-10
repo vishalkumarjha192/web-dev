@@ -1,2 +1,28 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+
+
+# Dependencies and builds
+node_modules/
+dist/
+coverage/
+
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+
+# Uploaded files (keep the folder, not the contents)
+server/uploads/*
+!server/uploads/.gitkeep

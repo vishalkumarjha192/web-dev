@@ -1,0 +1,47 @@
+// modules/isEven.js
+// Custom module: checks whether a number is even
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+module.exports = isEven;
+
+
+
+
+
+// Custom module: logs a message with a timestamp
+
+function log(message) {
+  const timestamp = new Date().toISOString();
+  console.log(`[${timestamp}] ${message}`);
+}
+
+module.exports = log;
+
+
+
+
+
+
+
+
+const isEven = require('./modules/isEven');
+const log = require('./modules/logger');
+
+log('App started');
+
+const numbers = [4, 7, 10, 13, 22];
+
+numbers.forEach((num) => {
+  const result = isEven(num) ? 'even' : 'odd';
+  log(`${num} is ${result}`);
+});
+
+log('App finished');
+
+
+
+
+

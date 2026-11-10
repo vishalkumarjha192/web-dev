@@ -1,0 +1,31 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "Name": "vishal"
+    },
+    {
+      "id": 2,
+      "Name": "sumit"
+    },
+    {
+      "id": 3,
+      "Name": "Aryan"
+    }
+  ],
+
+  "teachers": [
+    {
+      "id": 1,
+      "Name": "love"
+    },
+    {
+      "id": 2,
+      "Name": "vishal"
+    },
+    {
+      "id": 3,
+      "Name": "retu"
+    }
+  ]
+}
