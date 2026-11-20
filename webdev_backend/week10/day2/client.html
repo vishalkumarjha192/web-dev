@@ -1,25 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.socket.io/4.8.4/socket.io.min.js" integrity="sha384-fBrXvbDtHoeKWJ/hcA6M+YGueiDW+h45I7V6F2kD1S8bOkrF9rZYPLVkCR6BLR/1" crossorigin="anonymous"></script>
+  <title>Socket.IO Client</title>
+
+  <script src="https://cdn.socket.io/4.8.4/socket.io.min.js"></script>
 </head>
+
 <body>
-  <h1>Welcome to socket.io client side</h1>
+  <h1>Welcome to Socket.IO Client Side</h1>
+
+  <script>
+    // Connect to Socket.IO server
+    const socket = io("http://localhost:8080", {
+      transports: ["websocket"]
+    });
+
+    // Connection event
+    socket.on("connect", () => {
+      console.log("Connected to server:", socket.id);
+
+      // Sending message to server
+      socket.emit("kuchbhi", "Welcome to client side");
+    });
+
+    // Receiving message from server
+    socket.on("gyankibaat", (msg) => {
+      console.log("Message from server:", msg);
+    });
+
+    // Receiving notification when another user joins
+    socket.on("join", (msg) => {
+      console.log(msg);
+    });
+
+    // Error handling
+    socket.on("connect_error", (error) => {
+      console.log("Connection error:", error.message);
+    });
+
+    // Disconnect event
+    socket.on("disconnect", (reason) => {
+      console.log("Disconnected:", reason);
+    });
+  </script>
 </body>
-
-<script>
-  const socket = io("ws://localhost:8080/")
-
-  // sending
-  Socket.emit("kuchbhi", "Welcome to client side");
-
-  //  Reading
-  Socket.on("gyankibaat", (msg)=>{
-    console.log("Message from server",msg);
-  });
-</script>
-
 </html>
