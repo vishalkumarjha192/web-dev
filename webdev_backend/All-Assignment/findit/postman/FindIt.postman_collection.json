@@ -6,7 +6,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "http://localhost:5050/api"
+      "value": "https://web-dev-1-qygf.onrender.com/api"
     }
   ],
   "item": [
